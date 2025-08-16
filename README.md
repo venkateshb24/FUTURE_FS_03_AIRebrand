@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SoundWave Music App
 
-## Getting Started
+> A modern, premium music streaming web app inspired by Spotify. Built with Next.js, React, and Tailwind CSS.
 
-First, run the development server:
+## 🎵 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Browse & Play:**
+	- Stream songs by artists, playlists, and genres
+	- Play, pause, seek, and control volume with a global player
+- **Personal Library:**
+	- Like/unlike songs and manage your favorites
+	- Download songs for quick access (UI only)
+	- Recently played and custom playlists
+- **Artist & Playlist Views:**
+	- Drill down into artists and playlists, view and play their songs
+	- Like/play songs directly from any list
+- **Search:**
+	- Global search bar filters songs, artists, and playlists live
+- **Modern UI/UX:**
+	- Responsive, mobile-friendly, and accessible
+	- Custom color palette and branding (edit in `globals.css`)
+- **Modular Codebase:**
+	- Easy to extend with new features or UI sections
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. **Create a new Next.js app (if you haven't already):**
+   ```bash
+   npx create-next-app@latest . --use-npm --js --tailwind --no-eslint --no-src-dir --no-experimental-app
+   ```
+   > If you already have the project files, skip this step.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+4. **Open your browser:**
+   Visit [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🗂️ Project Structure
 
-## Learn More
+- `app/` — Main Next.js app logic and pages
+- `components/` — Modular React components (Header, MusicPlayer, YourLibrary, etc.)
+- `public/` — Static assets and audio files (add your own MP3s here)
+- `app/globals.css` — Tailwind and custom CSS
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Customization
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Add Songs:**
+	- Place MP3 files in `public/`
+	- Update song objects in `app/page.js` with the correct file names and metadata
+- **Branding:**
+	- Edit color variables and gradients in `app/globals.css`
+- **UI/UX:**
+	- Tweak or extend components in `components/` for new features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📝 Usage
 
-## Deploy on Vercel
+- **Play a Song:** Click any song row or play icon
+- **Like a Song:** Click the heart icon next to any song or artist
+- **Download a Song:** Click the download icon (UI only, does not save files locally)
+- **Search:** Use the navbar search to filter songs, artists, and playlists instantly
+- **Navigate:** Use the sidebar or navbar to switch between Home, Browse, and Your Library
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📦 Dependencies
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js](https://nextjs.org/) — React framework for production
+- [React](https://react.dev/) — UI library
+- [Tailwind CSS](https://tailwindcss.com/) — Utility-first CSS
+- [lucide-react](https://lucide.dev/) — Icon library
+
+## 🙏 Credits
+
+- UI/UX inspired by Spotify
+- Icons from [lucide-react](https://lucide.dev/)
+- Built with Next.js, Tailwind CSS, and React
+
+---
+
+Enjoy your music! If you have ideas or want to contribute, feel free to fork or open an issue.
